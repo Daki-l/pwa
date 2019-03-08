@@ -8,20 +8,18 @@
     <link rel="manifest" href="manifest.json"> -->
 </head>
 <body>
-    <h3>Hello PWA - 1</h3>
+    An image will appear here in 0.8 seconds:
+    <!-- <h3>Hello PWA - 1</h3> -->
 </body>
 <script>
-// 检测浏览器是否支持SW
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/sw.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}
-</script>
+    navigator.serviceWorker.register('/sw.js')
+      .then(reg => console.log('SW registered!', reg))
+      .catch(err => console.log('Boo!', err));
+  
+    setTimeout(() => {
+      const img = new Image();
+      img.src = 'img/one.jpg';
+      document.body.appendChild(img);
+    }, 800);
+  </script>
 </html>

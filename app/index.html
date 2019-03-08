@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Push Codelab</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>推送代码实验室</h1>
+  </header>
+
+  <main>
+    <p>欢迎来到一个消息推送代码实验室。下面的按钮需要修复，以支持订阅推送。</p>
+    <p>
+      <button disabled class="js-push-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+        启用消息推送
+      </button>
+    </p>
+    <section class="subscription-details js-subscription-details is-invisible">
+      <p>一旦订阅了用户，就会将他们的订阅发送到服务器，并将其存储在数据库中，这样当您想发送消息时，就可以查找订阅并向其发送消息。</p>
+      <p>
+        <span>要简化此代码实验室的工作，请将以下详细信息复制到</span>
+        <a href="https://web-push-codelab.glitch.me//">Push Companion Site</a>
+        它会使用网站上的application为您发送推送消息，——所以要确保它们匹配。
+      </p>
+      <pre><code class="js-subscription-json"></code></pre>
+    </section>
+  </main>
+
+  <script src="scripts/main.js"></script>
+
+  <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+</body>
+</html>
