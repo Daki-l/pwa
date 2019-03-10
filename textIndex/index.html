@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天气预报 PWA</title>
+    <link rel="stylesheet" type="text/css" href="./base.css">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+
+    <link rel="manifest" href="/manifest.json">
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Weather PWA">
+
+    <!-- <link rel="apple-touch-icon" href="images/icons/icon-152x152.png"> -->
+    <!-- <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png"> -->
+    <!-- <meta name="msapplication-TileColor" content="#2F3BA2"> -->
+    <script src="./static/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-box">
+            <div class="header-top">
+                <span class="header-city">天气预报</span>
+                <div class="header-slect">
+                    <select id="selectCityToAdd">
+                        <option value="上海">上海</option>
+                        <option value="北京">北京</option>
+                        <option value="广州">广州</option>
+                        <option value="杭州">杭州</option>
+                        <option value="成都">成都</option>
+                        <option value="芜湖">芜湖</option>
+                        <option value="合肥">合肥</option>
+                    </select>
+                </div>
+                <div class="header-btn">
+                    <!-- <i class="">刷新</i> -->
+                    <span class="refreshBtn" id="refreshBtn">刷新</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="mian">
+        <div class="card">
+            <div class="today-box">
+                <p class="today-top">
+                    <span class="today-city">上海</span>
+                    <span class="dingyue">订阅</span>
+                </p>
+                <div class="wendu-top">
+                    <p class="wendu-p">
+                        <span class="wendu">11</span>  ℃
+                    </p>
+                    <p class="feng">
+                        <span class="fengxiang">西风</span>
+                        <span class="fengli">3级</span>
+                    </p>
+                </div>
+                <div class="wendu-down">
+                    <p class="today">
+                        今天：<span class="type">雾</span>
+                        <span class="high">15</span> ~ <span class="low">10</span>
+                    </p>
+                </div>
+                <p class="ganmao">
+                    天冷空气湿度大，易发生感冒，请注意适当增加衣服，加强自我防护避免感冒。
+                </p>
+            </div>
+            <div class="otherDay">
+                <div class="otherday-box">
+                    <div class="otherday1">
+                        <p class="otherday1-date">9日星期六</p>
+                        <p class="otherday1-type">晴天</p>
+                        <span class="otherday3-high">20</span>
+                        <span class="otherday3-low">16</span>
+                    </div>
+                </div>
+                <div class="otherday-box">
+                    <div class="otherday2">
+                        <p class="otherday2-date">11日星期一</p>
+                        <p class="otherday2-type">晴天</p>
+                        <span class="otherday3-high">20</span> ~ 
+                        <span class="otherday3-low">16</span>
+                    </div>
+                </div>
+                <div class="otherday-box">
+                    <div class="otherday3">
+                        <p class="otherday3-date">12日星期二</p>
+                        <p class="otherday3-type">晴天</p>
+                        <span class="otherday3-high">20</span> ~ 
+                        <span class="otherday3-low">16</span>
+                    </div>
+                </div>
+                <div class="otherday-box">
+                        <div class="otherday4">
+                            <p class="otherday3-date">13日星期三</p>
+                            <p class="otherday3-type">晴天</p>
+                            <span class="otherday3-high">20</span> ~ 
+                            <span class="otherday3-low">16</span>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./index.js"></script>
+</html>
