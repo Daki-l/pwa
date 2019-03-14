@@ -87,8 +87,10 @@ function refresh() {
         url: `https://www.apiopen.top/weatherApi?city=${city}`
     }).then(res => {
         setMessage(res.data);
+        cache.add(`https://www.apiopen.top/weatherApi?city=${city}`);
     })
 }
+
 
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./sw.js').then(reg => {
