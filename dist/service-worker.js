@@ -1,4 +1,4 @@
-importScripts("./precache-manifest.44cc2eab8a4210038930b9bf52494e64.js");
+importScripts("./precache-manifest.49288a73fa4a5d590d340febec4beefa.js");
 
 
         importScripts('./static/workbox-v3.6.3/workbox-sw.js');
@@ -52,4 +52,4 @@ workbox.routing.registerRoute(/^https/i,
         ]
     })
 );
-workbox.routing.registerNavigationRoute('./index.html');
+undefined
