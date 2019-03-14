@@ -37,6 +37,7 @@ function urlB64ToUint8Array(base64String) {
 
 function initial() {
     setMessage(initData);
+    subscribeUser();
 }
 
 function setMessage(data) {
