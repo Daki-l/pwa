@@ -1,9 +1,9 @@
-importScripts("./precache-manifest.49288a73fa4a5d590d340febec4beefa.js");
+importScripts("/precache-manifest.a8b70c753e51fe1d73fd8540091dce30.js");
 
 
-        importScripts('./static/workbox-v3.6.3/workbox-sw.js');
+        importScripts('/static/workbox-v3.6.3/workbox-sw.js');
         workbox.setConfig({
-            modulePathPrefix: './static/workbox-v3.6.3/'
+            modulePathPrefix: '/static/workbox-v3.6.3/'
         });
     /**
  * @file service-worker.js with workbox api
@@ -52,4 +52,4 @@ workbox.routing.registerRoute(/^https/i,
         ]
     })
 );
-undefined
+workbox.routing.registerNavigationRoute('/index.html');
