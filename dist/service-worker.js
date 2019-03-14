@@ -1,9 +1,9 @@
 importScripts("./precache-manifest.bb69630fd26a0923ada876d3b1bd7348.js");
 
 
-        importScripts('/static/workbox-v3.6.3/workbox-sw.js');
+        importScripts('./static/workbox-v3.6.3/workbox-sw.js');
         workbox.setConfig({
-            modulePathPrefix: '/static/workbox-v3.6.3/'
+            modulePathPrefix: './static/workbox-v3.6.3/'
         });
     /**
  * @file service-worker.js with workbox api
@@ -52,4 +52,4 @@ workbox.routing.registerRoute(/^https/i,
         ]
     })
 );
-workbox.routing.registerNavigationRoute('/index.html');
+workbox.routing.registerNavigationRoute('./index.html');
